@@ -1,2 +1,0 @@
-# omdb
-Created with CodeSandbox
