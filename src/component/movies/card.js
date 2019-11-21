@@ -6,9 +6,8 @@ function Card({ data }) {
   return (
     <div className="row">
       {data.map(movie => {
-        console.log(movie);
         return (
-          <div className="col-md-4 mb-4">
+          <a href={`/movie/detail/${movie.imdbID}`} className="col-md-4 mb-4">
             <div className="card card-custom text-white">
               <img
                 style={{ maxHeight: "445px" }}
@@ -20,7 +19,7 @@ function Card({ data }) {
                 <p className="card-text text-muted">{movie.Year}</p>
               </div>
             </div>
-          </div>
+          </a>
         );
       })}
     </div>
