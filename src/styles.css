@@ -1,4 +1,5 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
 
 /* simple reset */
 * {
@@ -7,10 +8,105 @@
 }
 
 body {
-  background-color: #FEFDFD;
+  background-color: #fefdfd;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* search style */
 .search-wrapper {
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: #1a1510;
+  position: relative;
+}
+.search--input {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  /* background-color: green; */
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+.search--input input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+.search--input input[type="text"]:focus {
+  outline: none;
+}
+
+.search--input button {
+  width: 20%;
+  background-color: #fdb229;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.search--title {
+  padding: 25px;
+  text-align: center;
+}
+.search--title h1 {
+  color: #fefdfd;
+  font-weight: 700;
+}
+.search-wrapper--full {
+  display: flex;
+  flex-direction: row;
+  padding: 150px 0;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1510;
+}
+
+/* movies list style */
+.list-wrapper {
+  margin: 30px 0;
+}
+
+/* detail page */
+.poster-image {
+  position: absolute;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 25px 50px rgba(0, 0, 0, 0.5);
+}
+.movies--detail-top {
+  text-align: left;
+}
+.movies--detail-top h1 {
+  color: #fefdfd;
+}
+.movies--detail-top p {
+  color: #f1f1f1;
+  margin: 0 0;
+  line-height: 24px;
+}
+.movies--detail-bottom {
+  position: relative;
+  margin: 30px 0;
+}
+
+/* empty image */
+.empty-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 300px;
+  height: 444px;
+  border-radius: 5px;
+  background-color: #ddd;
 }
