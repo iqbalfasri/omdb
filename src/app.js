@@ -7,7 +7,7 @@ import Detailpage from "./pages/detail.page";
 function App() {
   return (
     <Switch>
-      <Route path="/" component={Homepage} />
+      <Route path="/" component={Homepage} exact={true} />
       <Route path="/movie/detail/:id" component={Detailpage} />
     </Switch>
   );
