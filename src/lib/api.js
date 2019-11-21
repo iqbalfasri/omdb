@@ -8,3 +8,9 @@ export const searchMovies = async keyword => {
   let { data } = response;
   return data;
 };
+
+export const detailMovie = async id => {
+  let response = await axios.get(`${API_URL}&i=${id}`);
+  let { data } = response;
+  return data;
+}
