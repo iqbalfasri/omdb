@@ -110,3 +110,17 @@ body {
   border-radius: 5px;
   background-color: #ddd;
 }
+
+
+/* button */
+.button--default {
+  display: flex;
+  max-width: 200px;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  background-color: #fdb229;
+  color: #1a1510;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
